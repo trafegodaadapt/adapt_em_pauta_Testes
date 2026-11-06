@@ -1,0 +1,38 @@
+{
+  "edition": "001",
+  "date": "06 NOV 2026",
+  "period": "Edição demonstrativa",
+  "title": "O que aconteceu na Adapt essa semana?",
+  "dek": "Uma edição modelo para mostrar como as histórias da equipe podem ganhar espaço.",
+  "intro": "Entre entregas, ideias e pequenas vitórias, sempre tem algo acontecendo. O Adapt em Pauta reúne esses momentos em um só lugar, com uma edição nova a cada semana.",
+  "stories": [
+    {"category":"CRIAÇÃO","title":"Uma ideia ganhou forma","text":"O time transformou um rascunho em uma peça pronta para entrar no ar. A edição final ficou mais clara depois de uma rodada de colaboração.","tag":"PROCESSO CRIATIVO"},
+    {"category":"PROJETOS","title":"Entrega concluída em equipe","text":"Uma etapa importante chegou ao fim com planejamento, troca entre áreas e atenção aos detalhes. Cada contribuição ajudou a fechar o ciclo.","tag":"CONQUISTA DA SEMANA"},
+    {"category":"BASTIDORES","title":"Tem novidade sendo preparada","text":"Uma iniciativa interna está tomando forma. A equipe compartilha os próximos detalhes quando tudo estiver confirmado.","tag":"EM BREVE"}
+  ],
+  "departments": [
+    {"name":"TRÁFEGO PAGO","title":"Novas ideias na pauta","text":"Um espaço para aprendizados de campanha, testes e boas perguntas da semana."},
+    {"name":"SITES","title":"Uma melhoria no ar","text":"Conte aqui uma solução que deixou a experiência mais simples ou rápida."},
+    {"name":"CS","title":"Uma história de parceria","text":"Compartilhe uma conquista do time ou um retorno que vale guardar."},
+    {"name":"CRIAÇÃO","title":"Processo que virou resultado","text":"Uma boa ideia, um detalhe bem resolvido ou uma entrega que merece destaque."}
+  ],
+  "agenda": [
+    {"day":"SEG–SEX","title":"A semana da equipe","text":"Inclua aqui os compromissos confirmados e os eventos que todos precisam conhecer."},
+    {"day":"SEXTA","title":"Próxima edição","text":"A redação reúne as histórias da semana e prepara o próximo número."}
+  ],
+  "horoscope": [
+    {"sign":"Áries","symbol":"♈","text":"Boa hora para trocar a pressa por uma conversa produtiva."},
+    {"sign":"Touro","symbol":"♉","text":"Uma ideia simples pode deixar o fim de semana mais leve."},
+    {"sign":"Gêmeos","symbol":"♊","text":"Resolve o que der e deixa espaço para uma pausa."},
+    {"sign":"Câncer","symbol":"♋","text":"Gentileza também é um jeito de cuidar da própria energia."},
+    {"sign":"Leão","symbol":"♌","text":"Nem toda conversa precisa virar um grande episódio."},
+    {"sign":"Virgem","symbol":"♍","text":"O descanso não precisa de uma planilha para funcionar."},
+    {"sign":"Libra","symbol":"♎","text":"Combina os planos com calma e evita três convites no mesmo horário."},
+    {"sign":"Escorpião","symbol":"♏","text":"Uma mudança de cenário pode trazer uma boa ideia."},
+    {"sign":"Sagitário","symbol":"♐","text":"A bateria social também merece ser recarregada."},
+    {"sign":"Capricórnio","symbol":"♑","text":"Desacelerar pode ser o melhor plano do fim de semana."},
+    {"sign":"Aquário","symbol":"♒","text":"Se algo mudar, respira antes de reorganizar tudo."},
+    {"sign":"Peixes","symbol":"♓","text":"Uma pequena aventura já conta como novidade."}
+  ],
+  "closing": "A próxima edição começa com uma história tua. Compartilha uma conquista, ideia ou bastidor que possa ser contado para toda a equipe."
+}
