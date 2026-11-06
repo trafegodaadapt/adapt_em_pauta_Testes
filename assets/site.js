@@ -38,7 +38,7 @@ function renderIndex(){
   list.innerHTML=editions.map(item=>`<button class="edition-row" type="button" data-edition-id="${esc(item.id)}" aria-pressed="false" aria-controls="reader"><span class="edition-number">${esc(item.id)}</span><span class="edition-copy"><strong>${esc(item.title)}</strong><small>${esc(item.date)} · ${esc(item.label)}</small></span><span class="edition-arrow" aria-hidden="true">↗</span></button>`).join("");
   const featured=editions.find(item=>item.featured)||editions[0];
   if(featured) selectEdition(featured.id);
-  $("#edition-count").textContent=String(editions.length).padStart(2,"0");
+  $("#edition-count").textContent=String(editions.length).padStart(2,"0");$("#edition-count-label").textContent=String(editions.length).padStart(2,"0");
   $("#edition-list").addEventListener("click",event=>{
     const button=event.target.closest("[data-edition-id]");
     if(button)selectEdition(button.dataset.editionId);
@@ -86,7 +86,7 @@ $("#read-selected").addEventListener("click",async()=>{
   finally{button.disabled=false;button.textContent="Ler edição "+item.id+" →"}
 });
 function renderEdition(data){
-  $("#reader-number").textContent=data.edition;
+  $("#reader-number").textContent=data.edition;$("#reader-number-cover").textContent=data.edition;
   $("#reader-date").textContent=data.date;
   $("#reader-title").textContent=data.title;
   $("#reader-dek").textContent=data.dek;
@@ -102,7 +102,7 @@ $("#back-to-index").addEventListener("click",()=>{
   summary.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
   $("#read-selected").focus({preventScroll:true});
 });
-$("#print-edition").addEventListener("click",()=>window.print());
+$("#print-edition-reader").addEventListener("click",()=>window.print());
 $("#copy-tag").addEventListener("click",async()=>{
   const feedback=$("#copy-status");
   try{await navigator.clipboard.writeText("#empauta");feedback.textContent="#empauta copiada."}
