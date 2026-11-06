@@ -1,0 +1,13 @@
+{
+  "editions": [
+    {
+      "id": "001",
+      "path": "./data/editions/001.json",
+      "date": "06 NOV 2026",
+      "label": "EDIÇÃO DE ESTREIA",
+      "title": "O que aconteceu na Adapt essa semana?",
+      "summary": "Uma edição modelo com histórias de equipe, giro por setor, agenda e resenha.",
+      "featured": true
+    }
+  ]
+}
