@@ -3,7 +3,7 @@ const $ = (selector, root=document) => root.querySelector(selector);
 const esc = (value="") => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 function renderEdition(data){
   $("#edition-date").textContent = data.date;
-  $("#edition-label").textContent = data.period;
+  $("#edition-label").textContent = data.edition;
   $("#cover-title").textContent = data.title;
   $("#cover-dek").textContent = data.dek;
   $("#cover-intro").textContent = data.intro;
