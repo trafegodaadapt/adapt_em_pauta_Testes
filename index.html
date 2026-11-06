@@ -4,127 +4,141 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17191e">
-  <meta name="description" content="Uma edição demonstrativa do jornal semanal Adapt em Pauta.">
-  <title>Adapt em Pauta — Prévia de validação</title>
-  <link rel="stylesheet" href="assets/site.css">
-  <script src="assets/site.js?v=ea781bd" defer></script>
+  <meta name="description" content="Escolha uma edição do Adapt em Pauta e acompanhe as histórias da equipe.">
+  <title>Adapt em Pauta — Jornal da equipe</title>
+  <link rel="stylesheet" href="assets/site.css?v=6809571">
+  <script src="assets/site.js?v=b27202c" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<body class="is-open">
+  <a class="skip-link" href="#sumario">Pular para o sumário</a>
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="#capa" aria-label="Adapt em Pauta, início">adapt <em>em pauta.</em></a>
-      <nav aria-label="Editorias">
-        <a href="#capa">Capa</a>
-        <a href="#destaques">Destaques</a>
-        <a href="#giro">Giro</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#horoscopo">Horóscopo</a>
-        <a href="#arquivo">Arquivo</a>
+      <nav class="topnav" aria-label="Navegação principal">
+        <a href="#capa">Início</a>
+        <a href="#sumario">Edições</a>
       </nav>
-      <span class="issue-mark">Edição <span id="edition-label">de demonstração</span></span>
+      <span class="edition-counter"><span id="edition-count">01</span> edição disponível</span>
     </div>
   </header>
-  <div class="demo-banner">Modelo de teste · conteúdo demonstrativo · fotos e registros reais removidos</div>
+  <div class="demo-ribbon">Modelo de teste · conteúdo demonstrativo · prévia do novo formato</div>
 
-  <main id="conteudo">
-    <section class="masthead" id="capa" aria-labelledby="brand-title">
-      <div>
+  <main>
+    <section class="hero" id="capa" aria-labelledby="hero-title">
+      <div class="hero-copy">
         <span class="eyebrow">Adapt Estratégias Digitais · Jornal da equipe</span>
-        <h1 id="brand-title">ADAPT <em>em pauta.</em></h1>
+        <h1 id="hero-title">Toda semana, uma nova história.</h1>
+        <p class="hero-kicker">As notícias da firma, reunidas em um jornal feito por adaptianos.</p>
+        <p>Abre a capa, escolhe uma edição e acompanha o que movimentou a equipe. Uma coleção de momentos que merecem mais do que passar pelo feed.</p>
+        <div class="motion-tools">
+          <button class="text-button skip-motion" id="skip-opening" type="button">Pular abertura ↓</button>
+          <button class="text-button replay-motion" id="replay-opening" type="button">↻ Rever abertura</button>
+          <span class="micro" id="motion-status" role="status" aria-live="polite"></span>
+        </div>
       </div>
-      <p class="masthead-note">Uma semana de ideias, encontros e pequenas vitórias.</p>
+
+      <div class="book-stage" aria-label="Animação de abertura do jornal">
+        <div class="book-shadow" aria-hidden="true"></div>
+        <div class="book">
+          <div class="book-page book-left">
+            <span class="page-label">Adapt em Pauta · Jornal da equipe</span>
+            <span class="big-issue">001</span>
+            <h2>O que aconteceu na Adapt essa semana?</h2>
+            <span class="micro">Uma edição nova a cada sexta</span>
+          </div>
+          <div class="book-page book-right">
+            <span class="page-label">Por dentro desta edição</span>
+            <div class="mini-lines" aria-hidden="true">
+              <div class="mini-line"><span>01</span> Histórias da semana</div>
+              <div class="mini-line"><span>02</span> Giro por setor</div>
+              <div class="mini-line"><span>03</span> Agenda da equipe</div>
+              <div class="mini-line"><span>04</span> Horóscopo & resenha</div>
+            </div>
+            <span class="micro">Edição de demonstração · 06 nov 2026</span>
+          </div>
+          <div class="paper-cover" id="opening-cover" aria-hidden="true">
+            <div class="cover-front">
+              <div class="cover-mast"><span>Adapt Estratégias Digitais</span><span>Edição 001 · 06 nov 2026</span></div>
+              <div class="cover-logo">adapt <em>em pauta.</em></div>
+              <div class="cover-main"><h2>O que aconteceu na Adapt essa semana?</h2><strong>001</strong></div>
+              <div class="cover-foot"><span>Jornal da equipe</span><span>Abre e vem ler ↓</span></div>
+            </div>
+            <div class="cover-back"><span class="micro">Uma semana de histórias.</span><span class="cover-logo">A firma também merece virar notícia.</span><span class="micro">Adapt em Pauta · 2026</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="cover" aria-labelledby="cover-title">
-      <div class="cover-copy">
-        <span class="sticker"><span id="edition-date">Edição demonstrativa</span> · Jornal da firma</span>
-        <h2 id="cover-title">O que aconteceu na Adapt essa semana?</h2>
-        <p class="dek" id="cover-dek">Uma edição modelo para mostrar como as histórias da equipe podem ganhar espaço.</p>
-        <p id="cover-intro">Entre entregas, ideias e pequenas vitórias, sempre tem algo acontecendo. O Adapt em Pauta reúne esses momentos em um só lugar.</p>
-        <p class="eyebrow">Uma edição nova a cada semana</p>
-      </div>
-      <div class="cover-visual" aria-label="Arte editorial abstrata da edição demonstrativa">
-        <span class="sun" aria-hidden="true"></span>
-        <span class="issue-number" id="edition-number">001</span>
-        <span class="visual-note">Uma história de cada vez · Adapt em Pauta</span>
-      </div>
-    </section>
-
-    <section class="section" id="destaques" aria-labelledby="stories-title">
+    <section class="summary" id="sumario" aria-labelledby="summary-title">
       <div class="section-head">
-        <div><span class="section-label">O que movimentou a equipe</span><h2 id="stories-title">Histórias da semana.</h2></div>
-        <p>Conquistas, aprendizados e bastidores que merecem sair do chat e ganhar uma página.</p>
+        <div><span class="page-label">Arquivo do jornal · <span id="edition-count-label">01</span> edição</span><h2 id="summary-title">Escolhe tua edição.</h2></div>
+        <p>Abre o sumário, encontra o número que procura e entra nas histórias daquela semana.</p>
       </div>
-      <div class="toolbar">
-        <div class="search"><label for="search-edition">Buscar</label><input id="search-edition" type="search" placeholder="Nesta edição…" autocomplete="off"></div>
-        <button class="button button-light" id="print-page" type="button">Imprimir / salvar PDF</button>
+
+      <div class="summary-spread">
+        <article class="featured-issue">
+          <span class="issue-badge"><span id="featured-date">Carregando…</span> · <span id="featured-label">Edição</span></span>
+          <h3 id="featured-title">O que aconteceu na Adapt essa semana?</h3>
+          <p id="featured-summary">Um resumo da edição selecionada.</p>
+          <div class="button-row">
+            <button class="button button-primary" id="read-selected" type="button">Ler edição →</button>
+            <button class="button button-outline" id="print-edition" type="button">Salvar PDF</button>
+          </div>
+        </article>
+
+        <div class="issue-index">
+          <div class="index-top">
+            <div><span class="page-label">Sumário</span><h3>Números publicados</h3></div>
+            <label class="micro" for="filter-editions">Buscar edição</label>
+          </div>
+          <input class="filter-issues" id="filter-editions" type="search" placeholder="Número, título ou data…" autocomplete="off">
+          <div class="edition-list" id="edition-list" role="list" aria-label="Edições disponíveis">
+            <p class="index-empty">Carregando o arquivo…</p>
+          </div>
+          <p class="selection-status" id="selection-status" role="status" aria-live="polite"></p>
+        </div>
       </div>
-      <p id="search-status" class="status" role="status" aria-live="polite"></p>
-      <div id="cover-stories" class="story-grid" aria-live="polite">
-        <article class="story"><span class="tag">Edição</span><h3>Carregando histórias…</h3><p>O conteúdo da edição está sendo preparado.</p></article>
-      </div>
+      <p class="load-status" id="load-status" role="status" aria-live="polite"></p>
     </section>
 
-    <section class="section" id="giro" aria-labelledby="giro-title">
-      <div class="section-head">
-        <div><span class="section-label">Notas da redação</span><h2 id="giro-title">Giro por setor.</h2></div>
-        <p>Um resumo rápido do que pode entrar na pauta. As histórias maiores ganham destaque à parte.</p>
+    <section class="reader" id="reader" hidden aria-labelledby="reader-title">
+      <div class="reader-top">
+        <span class="micro">Adapt em Pauta · Edição <span id="reader-number">001</span></span>
+        <div class="button-row">
+          <button class="button button-outline" id="back-to-index" type="button">← Voltar ao sumário</button>
+          <button class="button button-outline" id="print-edition-reader" type="button">Imprimir / PDF</button>
+        </div>
       </div>
-      <div class="giro-layout">
-        <aside class="giro-intro">
-          <span class="tag">De adaptiano para adaptiano</span>
-          <h3>Teu setor tem uma história?</h3>
-          <p>Conta o que aconteceu, quem participou e o que vale compartilhar com a equipe.</p>
-          <a class="button" href="https://app.feedz.com.br/" target="_blank" rel="noopener noreferrer">Abrir Feedz ↗</a>
-        </aside>
-        <div id="departments" class="dept-list" aria-live="polite"></div>
-      </div>
-    </section>
+      <header class="reader-cover">
+        <div><span class="micro" id="reader-date">06 NOV 2026</span><h2 id="reader-title" tabindex="-1">O que aconteceu na Adapt essa semana?</h2><p class="hero-kicker" id="reader-dek"></p><p id="reader-intro"></p></div>
+        <strong id="reader-number-cover">001</strong>
+      </header>
 
-    <section class="section" id="agenda" aria-labelledby="agenda-title">
-      <div class="section-head">
-        <div><span class="section-label">Próximos capítulos</span><h2 id="agenda-title">Agenda da equipe.</h2></div>
-        <p>Espaço para compromissos confirmados e eventos que todo mundo precisa conhecer.</p>
-      </div>
-      <div id="agenda-items" class="agenda" aria-live="polite"></div>
-    </section>
+      <section class="reader-section" aria-labelledby="reader-stories-title">
+        <span class="page-label">O que movimentou a equipe</span><h3 id="reader-stories-title">Histórias da semana.</h3>
+        <div class="story-grid" id="reader-stories"></div>
+      </section>
+      <section class="reader-section" aria-labelledby="reader-giro-title">
+        <span class="page-label">Notas da redação</span><h3 id="reader-giro-title">Giro por setor.</h3>
+        <div class="dept-list" id="reader-departments"></div>
+      </section>
+      <section class="reader-section" aria-labelledby="reader-agenda-title">
+        <span class="page-label">Próximos capítulos</span><h3 id="reader-agenda-title">Agenda da equipe.</h3>
+        <div class="agenda-list" id="reader-agenda"></div>
+      </section>
+      <section class="reader-section" aria-labelledby="reader-horoscope-title">
+        <span class="page-label">Departamento de previsões questionáveis</span><h3 id="reader-horoscope-title">Horóscopo do fim de semana.</h3>
+        <div class="sign-list" id="reader-horoscope"></div>
+      </section>
 
-    <section class="section" id="horoscopo" aria-labelledby="horoscope-title">
-      <div class="section-head">
-        <div><span class="section-label">Departamento de previsões questionáveis</span><h2 id="horoscope-title">Horóscopo do fim de semana.</h2></div>
-        <p>Previsões recreativas, adaptadas com humor. Os astros também recomendam fechar o notebook.</p>
-      </div>
-      <div id="horoscope-list" class="horo-grid" aria-live="polite"></div>
+      <section class="closing" aria-labelledby="closing-title">
+        <div><span class="micro">A próxima edição começa contigo</span><h3 id="closing-title">Radar ligado.</h3><p id="reader-closing"></p><p class="status" id="copy-status" role="status" aria-live="polite"></p></div>
+        <div class="button-row"><button class="button" id="copy-tag" type="button">Copiar #empauta</button><a class="button" href="https://app.feedz.com.br/" target="_blank" rel="noopener noreferrer">Publicar no Feedz ↗</a></div>
+      </section>
     </section>
-
-    <section class="section" id="arquivo" aria-labelledby="archive-title">
-      <div class="section-head">
-        <div><span class="section-label">Todas as edições em um só lugar</span><h2 id="archive-title">Arquivo do jornal.</h2></div>
-        <p>Uma estrutura pronta para guardar e encontrar as próximas edições.</p>
-      </div>
-      <article class="archive" id="archive-entry" aria-live="polite">
-        <div class="archive-number">001</div>
-        <div><span class="tag">Edição de demonstração</span><h3>O que aconteceu na Adapt essa semana?</h3><p>Primeira edição disponível no arquivo de demonstração.</p></div>
-      </article>
-    </section>
-
-    <section class="cta" id="resenha" aria-labelledby="closing-title">
-      <div>
-        <span class="tag">A próxima edição começa contigo</span>
-        <h2 id="closing-title">Radar ligado.</h2>
-        <p id="closing-copy">Compartilha uma conquista, ideia ou bastidor que possa ser contado para toda a equipe.</p>
-        <p class="status" id="copy-status" role="status" aria-live="polite"></p>
-      </div>
-      <div>
-        <button class="button" id="copy-tag" type="button">Copiar #empauta</button>
-        <p><a class="button button-light" href="https://app.feedz.com.br/" target="_blank" rel="noopener noreferrer">Publicar no Feedz ↗</a></p>
-      </div>
-    </section>
-
-    <p class="status" id="load-status" role="status" aria-live="polite"></p>
-    <footer><span>Adapt em Pauta · modelo de teste</span><span>Conteúdo demonstrativo · edição <span id="footer-edition">001</span></span><span>Uma edição por semana</span></footer>
   </main>
-  <script>document.querySelector("#footer-edition").textContent=document.querySelector("#edition-number").textContent;</script>
+
+  <footer><span>Adapt em Pauta · Jornal da equipe</span><span>Modelo de teste · conteúdo demonstrativo</span><span>Uma edição por semana</span></footer>
+  <noscript><style>.summary{opacity:1!important;transform:none!important;pointer-events:auto!important}.paper-cover{display:none!important}</style></noscript>
 </body>
 </html>
