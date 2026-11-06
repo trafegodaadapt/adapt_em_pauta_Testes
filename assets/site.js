@@ -53,7 +53,7 @@ function selectEdition(id){
   $("#featured-label").textContent=item.label;
   $("#featured-title").textContent=item.title;
   $("#featured-summary").textContent=item.summary;
-  $("#featured-number").textContent=item.id;
+  $(".featured-issue").dataset.issue=item.id;
   $("#read-selected").textContent="Ler edição "+item.id+" →";
   $("#selection-status").textContent="Edição "+item.id+" selecionada.";
 }
